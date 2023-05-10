@@ -1,0 +1,45 @@
+{
+"intents": [
+{
+"tag": "Bonjour",
+"patterns": [ "Bonjour", "Salut, comment ça va?","j'\\espère que vous allez bien", "salut", "Salut", "comment allez vous", "bonsoir", "Bonsoir", "cv?", "Cv?", "est il possible de discuter avec quelqu'\\un ?" ],
+"responses": [ "Bonjour ! Comment puis-je vous aider?", "Bienvenue ! En quoi puis-je vous aider?" ],
+"context": [ "" ]
+},
+{
+"tag": "Au revoir",
+"patterns": [ "Au revoir", "À plus tard", "Bye", "d'\\accord", "ok", "bonne journée", "Bonne journnée", "bonne fin de journée ", "bonne journée à vous", "bonne fin de journée à vous", "c'\\est bon" ],
+"responses": [ "Au revoir ! Bonne journée.", "À bientôt. N'hésitez pas à revenir si vous avez d'autres questions." ],
+"context": [ "" ]
+},
+{
+"tag": "Merci",
+"patterns": [ "merci", "Merci", "merci pour votre aide", "merci pour votre assistance", "Merci pour votre aide", "Merci pour votre assistance", "Merci de n'\\avoir consacré votre temps", "merci infiniment" ],
+"responses": [ "avec plaisir", "avec plaisir, bon chance.", "je vous en pris", "Pas de problème. Faites-moi savoir si vous avez besoin de plus d'aide." ],
+"context": [ "" ]
+},
+{
+"tag": "Info sur l'école",
+"patterns": [ "Quels sont les horaires de l'école?", "Quand commence l'école?", "Quelle est l'adresse de l'école?", "Quel est le numéro de téléphone de l'école?" ],
+"responses": [ "Les horaires de l'école sont de 8h00 à 15h00. L'école est située au 123 rue principale. Le numéro de téléphone est le (123) 456-7890." ],
+"context": [ "" ]
+},
+{
+"tag": "Info sur l'orientation",
+"patterns": [ "Quand est l'orientation?", "Que se passe-t-il pendant l'orientation?", "Dois-je assister à l'orientation?" ],
+"responses": [ "L'orientation est le 30 août à 9h00. Pendant l'orientation, vous recevrez des informations importantes sur l'école et rencontrerez vos professeurs. La participation est fortement recommandée." ],
+"context": [ "" ]
+},
+{
+"tag": "Info sur l'inscription",
+"patterns": [ "Comment m'inscrire à l'école?", "Quels documents dois-je apporter pour l'inscription?", "Y a-t-il une date limite d'inscription?" ],
+"responses": [ "Vous pouvez vous inscrire à l'école en visitant le bureau principal et en remplissant le formulaire d'inscription. Vous devrez apporter une copie de votre acte de naissance, une preuve d'adresse et un carnet de vaccination. La date limite d'inscription est le 15 août." ],
+"context": [ "" ]
+},
+{
+    "tag": "bourse",
+    "patterns": [ "Je vous contacte concernant le problème de traitement en cours des étudiants boursiers en lp Il y'a un formulaire à remplir sur votre site mais quand je viens de le remplir il y'a un problème"],
+    "responses":["Veillez contacter le service de bourse de service de scolarité de la FSJES Tétouan", "veuillez contacter le service chargé des bourse au niveau de la scolarité de la faculté", "veuillez c "]
+}
+]
+}
