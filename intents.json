@@ -40,6 +40,36 @@
     "tag": "bourse",
     "patterns": [ "Je vous contacte concernant le problème de traitement en cours des étudiants boursiers en lp Il y'a un formulaire à remplir sur votre site mais quand je viens de le remplir il y'a un problème"],
     "responses":["Veillez contacter le service de bourse de service de scolarité de la FSJES Tétouan", "veuillez contacter le service chargé des bourse au niveau de la scolarité de la faculté", "veuillez c "]
-}
+},
+{
+    "tag": "reconaissance",
+    "patterns": [ "comment voir si une école est reconnue ou pas ?", "est-ce que mon école est reconnue ?"],
+    "responses":["voir le bulletin officiel est chercher l'intitulé de l'école."],
+    "context":[ ""]
+},
+{
+    "tag": "Emploi du temps",
+    "patterns": ["Quel est l'emploi du temps de la semaine?", "Où puis-je trouver l'emploi du temps?", "Quels sont les cours prévus aujourd'hui?"],
+    "responses": ["L'emploi du temps de la semaine est disponible sur le site de l'école. Vous pouvez le consulter en ligne.", "L'emploi du temps est affiché sur le panneau d'affichage près du secrétariat de l'école.", "L'emploi du temps est distribué en début de chaque semaine aux étudiants."],
+    "context": [""]
+    },
+    {
+    "tag": "Programmes d'études",
+    "patterns": ["Quels sont les programmes d'études disponibles?", "Quels sont les cours proposés par l'école?", "Quel est le programme de la filière X?"],
+    "responses": ["L'école propose une variété de programmes d'études, notamment en sciences, en arts et en langues. Vous pouvez obtenir des informations détaillées sur les programmes sur le site de l'école.", "Les cours proposés par l'école couvrent un large éventail de domaines, tels que les mathématiques, la littérature, les sciences sociales et bien d'autres.", "Le programme de la filière X comprend des cours spécifiques liés à ce domaine, tels que A, B et C."],
+    "context": [""]
+    },
+    {
+        "tag": "Services de soutien",
+        "patterns": ["Quels services de soutien sont disponibles pour les étudiants?", "Où puis-je obtenir de l'aide pour mes études?", "Y a-t-il un service d'orientation professionnelle?"],
+        "responses": ["L'école offre différents services de soutien aux étudiants, tels que des services de tutorat, des conseils scolaires et des services d'orientation professionnelle. Vous pouvez vous rendre au bureau des services aux étudiants pour obtenir de l'aide.", "Pour obtenir de l'aide supplémentaire pour vos études, vous pouvez contacter le service de tutorat de l'école. Ils seront heureux de vous assister.", "Oui, l'école propose un service d'orientation professionnelle pour vous aider à explorer vos options de carrière et prendre des décisions éclairées."],
+        "context": [""]
+        },
+        {
+        "tag": "Vacances scolaires",
+        "patterns": ["Quelles sont les dates des vacances scolaires?", "Quand commence et se termine la période des vacances?", "Combien de temps durent les vacances scolaires?"],
+        "responses": ["Les dates des vacances scolaires varient chaque année. Vous pouvez consulter le calendrier scolaire officiel pour connaître les dates précises.", "La période des vacances commence généralement à la fin de l'année scolaire et se termine avant la rentrée suivante. La durée des vacances peut varier.", "Les vacances scolaires sont généralement d'une durée de quelques semaines. Les dates exactes sont disponibles dans le calendrier scolaire de l'école."],
+        "context": [""]
+        }        
 ]
 }
