@@ -2,15 +2,48 @@
 "intents": [
 {
 "tag": "Bonjour",
-"patterns": [ "Bonjour", "Salut, comment ça va?","j'\\espère que vous allez bien", "salut", "Salut", "comment allez vous", "bonsoir", "Bonsoir", "cv?", "Cv?", "est il possible de discuter avec quelqu'\\un ?" ],
-"responses": [ "Bonjour ! Comment puis-je vous aider?", "Bienvenue ! En quoi puis-je vous aider?" ],
-"context": [ "" ]
-},
+      "patterns": [
+        "Bonjour",
+        "Salut, comment ça va?",
+        "j'espère que vous allez bien",
+        "salut",
+        "Salut",
+        "comment allez vous",
+        "bonsoir",
+        "Bonsoir",
+        "cv?",
+        "Cv?",
+        "est il possible de discuter avec quelqu'\\un ?",
+        "Hello",
+        "Test"
+      ],
+      "responses": [
+        "Bonjour ! Comment puis-je vous aider?",
+        "Bienvenue ! En quoi puis-je vous aider?"
+      ],
+      "context": [""]},
 {
-"tag": "Au revoir",
-"patterns": [ "Au revoir", "À plus tard", "Bye", "d'\\accord", "ok", "bonne journée", "Bonne journnée", "bonne fin de journée ", "bonne journée à vous", "bonne fin de journée à vous", "c'\\est bon" ],
-"responses": [ "Au revoir ! Bonne journée.", "À bientôt. N'hésitez pas à revenir si vous avez d'autres questions." ],
-"context": [ "" ]
+ "tag": "Au revoir",
+      "patterns": [
+        "Au revoir",
+        "À plus tard",
+        "Bye",
+        "d'\\accord",
+        "ok",
+        "bonne journée",
+        "Bonne journnée",
+        "bonne fin de journée ",
+        "bonne journée à vous",
+        "bonne fin de journée à vous",
+        "c'\\est bon",
+        "A+",
+        "ok merci"
+      ],
+      "responses": [
+        "Au revoir ! Bonne journée.",
+        "À bientôt. N'hésitez pas à revenir si vous avez d'autres questions."
+      ],
+      "context": [""]
 },
 {
 "tag": "Merci",
@@ -70,6 +103,13 @@
         "patterns": ["Quelles sont les dates des vacances scolaires?", "Quand commence et se termine la période des vacances?", "Combien de temps durent les vacances scolaires?"],
         "responses": ["Les dates des vacances scolaires varient chaque année. Vous pouvez consulter le calendrier scolaire officiel pour connaître les dates précises.", "La période des vacances commence généralement à la fin de l'année scolaire et se termine avant la rentrée suivante. La durée des vacances peut varier.", "Les vacances scolaires sont généralement d'une durée de quelques semaines. Les dates exactes sont disponibles dans le calendrier scolaire de l'école."],
         "context": [""]
-        }        
+        },
+        {
+        "tag": "SupMTI",
+        "patterns": ["SupMTI", "informations sur l'école supmti", "école d'informatique", "école de management", "école privé", "école accréditée", "école privé étatique"],
+        "responses": ["SUP MTI - École Supérieure de Management, Télécommunications et d'Informatique à Rabat au Maroc est un établissement d’enseignement supérieur privé reconnu par l'État, créé en 2006 par un groupe d’enseignants de l'École nationale supérieure d'informatique et d'analyse des systèmes (ENSIAS), pour satisfaire les besoins du secteur professionnel en cadres de haut niveau dans les domaines du génie logiciel, des réseaux ainsi que celui du management. pour plus d'infos voir leur site : https://supmti.ac.ma/"],
+        "context":[""]
+        }
+
 ]
 }
