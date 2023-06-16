@@ -48,13 +48,13 @@
 {
 "tag": "Merci",
 "patterns": [ "merci", "Merci", "merci pour votre aide", "merci pour votre assistance", "Merci pour votre aide", "Merci pour votre assistance", "Merci de n'\\avoir consacré votre temps", "merci infiniment" ],
-"responses": [ "avec plaisir", "avec plaisir, bon chance.", "je vous en pris", "Pas de problème. Faites-moi savoir si vous avez besoin de plus d'aide." ],
+"responses": [ "avec plaisir", "avec plaisir, bonne chance.", "je vous en pris", "Pas de problème. Faites-moi savoir si vous avez besoin de plus d'aide." ],
 "context": [ "" ]
 },
 {
 "tag": "Info sur l'école",
 "patterns": [ "Quels sont les horaires de l'école?", "Quand commence l'école?", "Quelle est l'adresse de l'école?", "Quel est le numéro de téléphone de l'école?" ],
-"responses": [ "Les horaires de l'école sont de 8h00 à 15h00. L'école est située au 123 rue principale. Le numéro de téléphone est le (123) 456-7890." ],
+"responses": [ "Les horaires de l'école sont de 8h00 à 17h30.la localisation de l'école est disponible sur google maps" ],
 "context": [ "" ]
 },
 {
@@ -109,7 +109,125 @@
         "patterns": ["SupMTI", "informations sur l'école supmti", "école d'informatique", "école de management", "école privé", "école accréditée", "école privé étatique"],
         "responses": ["SUP MTI - École Supérieure de Management, Télécommunications et d'Informatique à Rabat au Maroc est un établissement d’enseignement supérieur privé reconnu par l'État, créé en 2006 par un groupe d’enseignants de l'École nationale supérieure d'informatique et d'analyse des systèmes (ENSIAS), pour satisfaire les besoins du secteur professionnel en cadres de haut niveau dans les domaines du génie logiciel, des réseaux ainsi que celui du management. pour plus d'infos voir leur site : https://supmti.ac.ma/"],
         "context":[""]
-        }
+        },
+		
+		{
+        "tag": "Bac",
+        "patterns": ["Bac", "SVT", "PC", "économie", "Obtenu mon bac", "deuxième année", "école privé", "école publique"],
+        "responses": [
+		"Faculté des Sciences : Les facultés des sciences des universités marocaines offrent des programmes de licence en sciences de la vie (biologie, biotechnologie, etc.) ainsi qu'en sciences physiques (physique, chimie, etc.). Vous pouvez vous renseigner sur les sites des différentes universités marocaines pour obtenir plus d'informations sur les programmes spécifiques proposés.",
+		" Ecole Supérieure de Technologie (EST) : Les EST proposent des formations techniques et professionnelles dans divers domaines, y compris la biologie, la chimie, et la physique. Vous pouvez vous renseigner sur les EST de votre région pour connaître les options disponibles.",
+		"Plusieurs écoles privés existent aussi comme SupMTI, ISMAGI, INSA et d'autres que vous allez trouver dans notre site "],
+        "context":[""]
+        },
+		{
+        "tag": "orientation",
+        "patterns": ["informatique", "Eco", "Economie", "économie", "Architecture", "Batiment", "Design", "Infographie"],
+        "responses": [
+		"Merci de vous renseigner dans la rubriques des écoles dans notre site Inaway.ma afin de trouver des informations détaillées sur les écoles"
+		],
+        "context":[""]
+        },
+		{
+      "tag": "Autres informations",
+      "patterns": [
+        "Quels sont les clubs et les activités parascolaires offerts?",
+        "Y a-t-il un service de cantine à l'école?",
+        "Quelle est la politique de l'école concernant les uniformes?",
+        "Quels sont les niveaux scolaires disponibles à l'école?",
+        "Quelles sont les langues enseignées à l'école?",
+        "Y a-t-il un programme de soutien scolaire pour les élèves en difficulté?"
+      ],
+      "responses": [
+        "les écoles offrent une variété de clubs et d'activités parascolaires, notamment des clubs de musique, de sport, d'art et de débat. Oui, nous avons un service de cantine qui propose des repas sains et équilibrés. L'école a une politique d'uniforme obligatoire pour tous les élèves. Nous proposons des niveaux scolaires de la maternelle à la 12e année. Les langues enseignées à l'école sont l'anglais, le français et l'espagnol. Oui, nous avons un programme de soutien scolaire pour les élèves qui ont besoin d'une assistance supplémentaire."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Info sur l'ENSA",
+      "patterns": [
+        "Qu'est-ce que l'ENSA?",
+        "Quels programmes sont proposés à l'ENSA?",
+        "Où se trouve l'ENSA?"
+      ],
+      "responses": [
+        "L'ENSA (École Nationale des Sciences Appliquées) est une école d'ingénieurs au Maroc. Elle propose des programmes de formation en sciences appliquées et en ingénierie, notamment dans des domaines tels que l'informatique, l'électronique, le génie civil et le génie industriel. L'ENSA a plusieurs campus à travers le Maroc, notamment à Rabat, Casablanca, Fès, Tanger et Agadir."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Info sur l'ENCG",
+      "patterns": [
+        "Qu'est-ce que l'ENCG?",
+        "Quels programmes sont proposés à l'ENCG?",
+        "Où se trouve l'ENCG?"
+      ],
+      "responses": [
+        "L'ENCG (École Nationale de Commerce et de Gestion) est une école de commerce et de gestion au Maroc. Elle propose des programmes de formation dans les domaines du commerce, de la gestion, du marketing, de la finance et de la comptabilité. L'ENCG a plusieurs campus à travers le Maroc, notamment à Casablanca, Marrakech, Agadir, Tanger et Fès."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Info sur  EST",
+      "patterns": [
+        "EST",
+        "Qu'est-ce que les classes préparatoires EST?",
+        "Quels programmes sont proposés dans les classes préparatoires EST?",
+        "Où se trouvent les classes préparatoires EST?"
+      ],
+      "responses": [
+        "Les classes préparatoires EST (Écoles Supérieures de Technologie) sont des formations post-baccalauréat au Maroc. Elles offrent des programmes de préparation aux études supérieures techniques et scientifiques. Les étudiants des classes préparatoires EST peuvent se spécialiser dans des domaines tels que l'informatique, l'électronique, le génie civil, la mécanique et les sciences appliquées. Les classes préparatoires EST sont disponibles dans plusieurs villes du Maroc, dont Rabat, Casablanca, Fès, Marrakech et Tanger."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Info sur la faculté",
+      "patterns": [
+        "Qu'est-ce que la faculté?",
+        "Quels programmes sont proposés à la faculté?",
+        "Où se trouve la faculté?"
+      ],
+      "responses": [
+        "La faculté est un établissement d'enseignement supérieur au Maroc. Elle propose une variété de programmes de formation dans divers domaines, tels que les sciences humaines, les sciences sociales, les sciences exactes et les sciences de la santé. Les programmes offerts à la faculté comprennent des diplômes de licence, de master et de doctorat. Les facultés sont généralement situées dans différentes villes du Maroc, en fonction de leur spécialité."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Info sur la FST",
+      "patterns": [
+      "Qu'est-ce que la FST?",
+      "Quels programmes sont proposés à la FST?",
+      "Où se trouve la FST?"
+      ],
+      "responses": [
+      "La FST (Faculté des Sciences et Techniques) est une institution d'enseignement supérieur au Maroc. Elle propose des programmes de formation en sciences et techniques, tels que les mathématiques, la physique, la chimie, la biologie, l'informatique et l'électronique. La FST est présente dans plusieurs villes du Maroc, dont Fès, Casablanca, Tanger, Marrakech et Agadir."
+      ],
+      "context": [""]
+      },
+      {
+        "tag": "Info sur la médecine",
+        "patterns": [
+        "Qu'est-ce que l'école de médecine?",
+        "Quels programmes sont proposés à l'école de médecine?",
+        "Où se trouve l'école de médecine?"
+        ],
+        "responses": [
+        "L'école de médecine est une institution d'enseignement supérieur qui forme des étudiants à devenir des professionnels de la santé, tels que des médecins, des chirurgiens et des spécialistes. Les programmes proposés à l'école de médecine comprennent un programme de doctorat en médecine (MD) ainsi que des spécialisations dans différents domaines médicaux. Au Maroc, les écoles de médecine se trouvent dans différentes villes, dont Casablanca, Rabat, Marrakech, Fès et Tanger."
+        ],
+        "context": [""]
+        },
+		{
+			"tag":"DUT",
+			"patterns": [
+			"DUT","EST","Diplome universitaire technique", "diplome technologie","informatique"
+			],
+			"responses":
+			["Le diplôme universitaire de technologie (DUT) est un diplôme à caractère technique, dont la formation s'étale sur 2 ans. La formation DUT au Maroc est généralement assurée par les EST (Ecoles Supérieures de Technologies). Cependant il y a des établissements privés qui en sont spécialisés."
+			],
+			"context":[""]
+		}
+		
+		
 
 ]
 }
