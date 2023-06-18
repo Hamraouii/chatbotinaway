@@ -112,12 +112,10 @@
         },
 		
 		{
-        "tag": "Bac",
-        "patterns": ["Bac", "SVT", "PC", "économie", "Obtenu mon bac", "deuxième année", "école privé", "école publique"],
+        "tag": "baccalauréat ",
+        "patterns": ["j'ai un Bac", "éleve au lycée", "Je veux des informations sur les écoles", "j'ai Obtenu mon bac", "deuxième année", "école privé", "école publique"],
         "responses": [
-		"Faculté des Sciences : Les facultés des sciences des universités marocaines offrent des programmes de licence en sciences de la vie (biologie, biotechnologie, etc.) ainsi qu'en sciences physiques (physique, chimie, etc.). Vous pouvez vous renseigner sur les sites des différentes universités marocaines pour obtenir plus d'informations sur les programmes spécifiques proposés.",
-		" Ecole Supérieure de Technologie (EST) : Les EST proposent des formations techniques et professionnelles dans divers domaines, y compris la biologie, la chimie, et la physique. Vous pouvez vous renseigner sur les EST de votre région pour connaître les options disponibles.",
-		"Plusieurs écoles privés existent aussi comme SupMTI, ISMAGI, INSA et d'autres que vous allez trouver dans notre site "],
+		"Faculté des Sciences : Les facultés des sciences des universités marocaines offrent des programmes de licence en sciences de la vie (biologie, biotechnologie, etc.) ainsi qu'en sciences physiques (physique, chimie, etc.). Vous pouvez vous renseigner sur les sites des différentes universités marocaines pour obtenir plus d'informations sur les programmes spécifiques proposés. Ecole Supérieure de Technologie (EST) : Les EST proposent des formations techniques et professionnelles dans divers domaines, y compris la biologie, la chimie, et la physique. Vous pouvez vous renseigner sur les EST de votre région pour connaître les options disponibles.Plusieurs écoles privés existent aussi comme SupMTI, ISMAGI, INSA et d'autres que vous allez trouver dans notre site pour plus d'informations merci de vous renseigner dans notre site ou poser vos questions dans le forum."],
         "context":[""]
         },
 		{
@@ -148,7 +146,8 @@
       "patterns": [
         "Qu'est-ce que l'ENSA?",
         "Quels programmes sont proposés à l'ENSA?",
-        "Où se trouve l'ENSA?"
+        "Où se trouve l'ENSA?",
+        "ENSA"
       ],
       "responses": [
         "L'ENSA (École Nationale des Sciences Appliquées) est une école d'ingénieurs au Maroc. Elle propose des programmes de formation en sciences appliquées et en ingénierie, notamment dans des domaines tels que l'informatique, l'électronique, le génie civil et le génie industriel. L'ENSA a plusieurs campus à travers le Maroc, notamment à Rabat, Casablanca, Fès, Tanger et Agadir."
@@ -160,7 +159,8 @@
       "patterns": [
         "Qu'est-ce que l'ENCG?",
         "Quels programmes sont proposés à l'ENCG?",
-        "Où se trouve l'ENCG?"
+        "Où se trouve l'ENCG?",
+        "ENCG"
       ],
       "responses": [
         "L'ENCG (École Nationale de Commerce et de Gestion) est une école de commerce et de gestion au Maroc. Elle propose des programmes de formation dans les domaines du commerce, de la gestion, du marketing, de la finance et de la comptabilité. L'ENCG a plusieurs campus à travers le Maroc, notamment à Casablanca, Marrakech, Agadir, Tanger et Fès."
@@ -185,7 +185,9 @@
       "patterns": [
         "Qu'est-ce que la faculté?",
         "Quels programmes sont proposés à la faculté?",
-        "Où se trouve la faculté?"
+        "Où se trouve la faculté?",
+        "La Fac",
+        "La faculté"
       ],
       "responses": [
         "La faculté est un établissement d'enseignement supérieur au Maroc. Elle propose une variété de programmes de formation dans divers domaines, tels que les sciences humaines, les sciences sociales, les sciences exactes et les sciences de la santé. Les programmes offerts à la faculté comprennent des diplômes de licence, de master et de doctorat. Les facultés sont généralement situées dans différentes villes du Maroc, en fonction de leur spécialité."
@@ -197,7 +199,8 @@
       "patterns": [
       "Qu'est-ce que la FST?",
       "Quels programmes sont proposés à la FST?",
-      "Où se trouve la FST?"
+      "Où se trouve la FST?",
+      "FST"
       ],
       "responses": [
       "La FST (Faculté des Sciences et Techniques) est une institution d'enseignement supérieur au Maroc. Elle propose des programmes de formation en sciences et techniques, tels que les mathématiques, la physique, la chimie, la biologie, l'informatique et l'électronique. La FST est présente dans plusieurs villes du Maroc, dont Fès, Casablanca, Tanger, Marrakech et Agadir."
@@ -209,7 +212,8 @@
         "patterns": [
         "Qu'est-ce que l'école de médecine?",
         "Quels programmes sont proposés à l'école de médecine?",
-        "Où se trouve l'école de médecine?"
+        "Où se trouve l'école de médecine?",
+        "Médecine"
         ],
         "responses": [
         "L'école de médecine est une institution d'enseignement supérieur qui forme des étudiants à devenir des professionnels de la santé, tels que des médecins, des chirurgiens et des spécialistes. Les programmes proposés à l'école de médecine comprennent un programme de doctorat en médecine (MD) ainsi que des spécialisations dans différents domaines médicaux. Au Maroc, les écoles de médecine se trouvent dans différentes villes, dont Casablanca, Rabat, Marrakech, Fès et Tanger."
@@ -225,7 +229,14 @@
 			["Le diplôme universitaire de technologie (DUT) est un diplôme à caractère technique, dont la formation s'étale sur 2 ans. La formation DUT au Maroc est généralement assurée par les EST (Ecoles Supérieures de Technologies). Cependant il y a des établissements privés qui en sont spécialisés."
 			],
 			"context":[""]
-		}
+		},
+    {
+      "tag": "unknown",
+      "patterns":["{*}"],
+      "responses": ["Bonjour je ne comprend pas votre demande merci de vous renseigner sur le forum et poster votre question, nos conseillers vont vos répondre dans les meilleurs délais. :) "],
+      "context": [""]  
+
+    }
 		
 		
 
